@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d7f4fb;
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header .logo {
+    height: 70px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.tips-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.tips-section h2 {
+    font-size: 45px;
+    color: #00a2c3;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 35px;
+}
+
+.tip-card {
+    background-color: #f5ffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgb(92, 189, 189);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card h3 {
+    font-size: 24.2px;
+    color: #ad0900;
+    margin-bottom: 5px;
+}
+
+.tip-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.tip-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgb(140, 237, 250);
+}
+
+footer {
+    background-color: #1ca0bb;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}

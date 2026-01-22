@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #090048;
+    background-color: #f8fafa;
+}
+
+a {
+    text-decoration: none;
+    color: #090048;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5%;   /* thick header */
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+header img {
+    width: 60px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #090048;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5%;
+    background-color: #d7f4fb; /* soft blue */
+    gap: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 690px;
+    font-size: 18px;
+}
+
+
+
+/* Mission Section */
+.mission {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.mission h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* Vision Section */
+
+.vision {
+    padding: 50px 5%;
+    background-color: #d7f4fb;
+    text-align: center;
+}
+
+.vision h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.vision p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* Values Section */
+.values {
+    padding: 50px 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.values h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.value-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #d7f4fb;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #1ca0bb;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}

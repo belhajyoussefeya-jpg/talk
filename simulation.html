@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview Simulation Form</title>
+    <link rel="stylesheet" href="simulation.css">
+</head>
+<body>
+
+    <header>
+        <img src="talk2hire/Logo__-removebg-preview.png" alt="talk2hire logo"/>
+        <nav class="navigation">
+            <ul>
+                <li><a href="INDEX.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+
+    <div class="form-container">
+        <h2>Interview Simulation Form</h2>
+        <p class="subtitle">Fill in the details to prepare your interview simulation</p>
+
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Enter your first name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Enter your last name" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Job Position</label>
+                <input type="text" placeholder="e.g. Software Developer" required>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Interview Language</label>
+                    <select required>
+                        <option value="">Select language</option>
+                        <option>English</option>
+                        <option>French</option>
+                        <option>Arabic</option>
+                        <option>Portugais</option>
+                        <option>Spanish</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Interview Time</label>
+                    <input type="time" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Age</label>
+                    <input type="number" min="16" placeholder="Your age" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Do you have previous experience?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="experience" required> Yes</label>
+                    <label><input type="radio" name="experience"> No</label>
+                </div>
+            </div>
+
+             <div class="input-group">
+            <label>Upload Your CV</label>
+            <input type="file" accept=".pdf,.doc,.docx" required>
+            <small class="hint">Accepted formats: PDF, DOC, DOCX</small>
+        </div>
+
+            <div class="input-group">
+                <label>Additional Information (optional)</label>
+                <textarea placeholder="Add anything you'd like us to know..."></textarea>
+            </div>
+
+            <button type="submit">Start Interview Simulation</button>
+        </form>
+    </div>
+
+</body>
+</html>

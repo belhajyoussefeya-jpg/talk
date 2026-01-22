@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Talk2Hire</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+    <img src="talk2hire/Logo__-removebg-preview.png" alt="Logo">
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="feedback-container">
+        <div class="feedback-header">
+            <h1><i class="fas fa-comment-dots"></i> Share Your Feedback</h1>
+            <p class="subtitle">Your opinion helps us improve the Talk2Hire experience for everyone</p>
+        </div>
+
+        <form action="#" method="POST" class="feedback-form">
+            <!-- User Information -->
+            <div class="form-section">
+                <h2 class="section-title">
+                    <i class="fas fa-user-circle"></i> About You
+                </h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="userName">
+                            <i class="fas fa-user"></i> Your Name (Optional)
+                        </label>
+                        <input type="text" id="userName" name="userName" 
+                               placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userEmail">
+                            <i class="fas fa-envelope"></i> Email (Optional)
+                        </label>
+                        <input type="email" id="userEmail" name="userEmail" 
+                               placeholder="your.email@example.com">
+                        <p class="field-note">We'll only use this to respond to your feedback</p>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="userType">
+                        <i class="fas fa-users"></i> You are a *
+                    </label>
+                    <select id="userType" name="userType" required>
+                        <option value="" disabled selected>Select your role</option>
+                        <option value="job-seeker">Job Seeker / Candidate</option>
+                        <option value="student">Student</option>
+                        <option value="professional">Working Professional</option>
+                        <option value="recruiter">Recruiter / HR</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Overall Experience -->
+            <div class="form-section">
+                <h2 class="section-title">
+                    <i class="fas fa-star"></i> Overall Experience
+                </h2>
+                
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-smile"></i> How would you rate your overall experience with Talk2Hire? *
+                    </label>
+                    <div class="rating-container">
+                        <div class="rating-scale">
+                            <div class="rating-option">
+                                <input type="radio" id="rating-1" name="rating" value="1" required>
+                                <label for="rating-1" class="rating-label">
+                                    <span class="rating-number">1</span>
+                                    <span class="rating-text">Poor</span>
+                                </label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="rating-2" name="rating" value="2" required>
+                                <label for="rating-2" class="rating-label">
+                                    <span class="rating-number">2</span>
+                                    <span class="rating-text">Fair</span>
+                                </label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="rating-3" name="rating" value="3" required>
+                                <label for="rating-3" class="rating-label">
+                                    <span class="rating-number">3</span>
+                                    <span class="rating-text">Good</span>
+                                </label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="rating-4" name="rating" value="4" required>
+                                <label for="rating-4" class="rating-label">
+                                    <span class="rating-number">4</span>
+                                    <span class="rating-text">Very Good</span>
+                                </label>
+                            </div>
+                            <div class="rating-option">
+                                <input type="radio" id="rating-5" name="rating" value="5" required>
+                                <label for="rating-5" class="rating-label">
+                                    <span class="rating-number">5</span>
+                                    <span class="rating-text">Excellent</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="rating-emojis">
+                            <span>😞</span>
+                            <span>😐</span>
+                            <span>😊</span>
+                            <span>😃</span>
+                            <span>🤩</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Feedback -->
+            <div class="form-section">
+                <h2 class="section-title">
+                    <i class="fas fa-clipboard-check"></i> Detailed Feedback
+                </h2>
+                
+                <div class="form-group">
+                    <label for="feedbackCategory">
+                        <i class="fas fa-tags"></i> What does your feedback relate to? *
+                    </label>
+                    <select id="feedbackCategory" name="feedbackCategory" required>
+                        <option value="" disabled selected>Select category</option>
+                        <option value="mock-interview">Mock Interview Experience</option>
+                        <option value="feedback-quality">Feedback Quality</option>
+                        <option value="platform-usability">Platform Usability</option>
+                        <option value="features">Features & Tools</option>
+                        <option value="customer-support">Customer Support</option>
+                        <option value="pricing">Pricing & Plans</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedbackTitle">
+                        <i class="fas fa-heading"></i> Brief Title of Your Feedback *
+                    </label>
+                    <input type="text" id="feedbackTitle" name="feedbackTitle" required 
+                           placeholder="e.g., Great interview practice, but could improve...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedbackDetails">
+                        <i class="fas fa-edit"></i> Please provide details *
+                    </label>
+                    <textarea id="feedbackDetails" name="feedbackDetails" required
+                              placeholder="Tell us about your experience, what you liked, what could be improved, and any suggestions you have..."
+                              rows="6"></textarea>
+                    <div class="char-count">
+                        <span>0</span>/1000 characters
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-thumbs-up"></i> What did you like most?
+                    </label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="likes[]" value="realistic-interviews">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">Realistic interview simulations</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="likes[]" value="detailed-feedback">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">Detailed feedback & analysis</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="likes[]" value="user-interface">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">User-friendly interface</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="likes[]" value="variety-questions">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">Variety of interview questions</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="likes[]" value="performance-tracking">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">Performance tracking over time</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-lightbulb"></i> Areas for improvement (Optional)
+                    </label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="improvements[]" value="more-industries">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">More industry-specific questions</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="improvements[]" value="mobile-app">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">Mobile app version</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="improvements[]" value="more-languages">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">More language options</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="improvements[]" value="faster-feedback">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">Feedback delivery time</span>
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="improvements[]" value="pricing-options">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">More flexible pricing options</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommendation -->
+            <div class="form-section">
+                <h2 class="section-title">
+                    <i class="fas fa-share-alt"></i> Recommendation
+                </h2>
+                
+                <div class="form-group">
+                    <label>
+                        <i class="fas fa-users"></i> How likely are you to recommend Talk2Hire to others? *
+                    </label>
+                    <div class="recommendation-scale">
+                        <div class="scale-labels">
+                            <span>Very Unlikely</span>
+                            <span>Very Likely</span>
+                        </div>
+                        <div class="scale-numbers">
+                            <label class="scale-option">
+                                <input type="radio" name="recommendation" value="0" required>
+                                <span class="scale-number">0</span>
+                            </label>
+                            <label class="scale-option">
+                                <input type="radio" name="recommendation" value="1" required>
+                                <span class="scale-number">1</span>
+                            </label>
+                            <label class="scale-option">
+                                <input type="radio" name="recommendation" value="2" required>
+                                <span class="scale-number">2</span>
+                            </label>
+                            <label class="scale-option">
+                                <input type="radio" name="recommendation" value="3" required>
+                                <span class="scale-number">3</span>
+                            </label>
+                            <label class="scale-option">
+                                <input type="radio" name="recommendation" value="4" required>
+                                <span class="scale-number">4</span>
+                            </label>
+                            <label class="scale-option">
+                                <input type="radio" name="recommendation" value="5" required>
+                                <span class="scale-number">5</span>
+                            </label>
+                            <label class="scale-option">
+                                <input type="radio" name="recommendation" value="6" required>
+                                <span class="scale-number">6</span>
+                            </label>
+                            <label class="scale-option">
+                                <input type="radio" name="recommendation" value="7" required>
+                                <span class="scale-number">7</span>
+                            </label>
+                            <label class="scale-option">
+                                <input type="radio" name="recommendation" value="8" required>
+                                <span class="scale-number">8</span>
+                            </label>
+                            <label class="scale-option">
+                                <input type="radio" name="recommendation" value="9" required>
+                                <span class="scale-number">9</span>
+                            </label>
+                            <label class="scale-option">
+                                <input type="radio" name="recommendation" value="10" required>
+                                <span class="scale-number">10</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="additionalComments">
+                        <i class="fas fa-comments"></i> Any additional comments or suggestions?
+                    </label>
+                    <textarea id="additionalComments" name="additionalComments" 
+                              placeholder="Is there anything else you'd like to share with us?"
+                              rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Submit Section -->
+            <div class="form-section submit-section">
+                <div class="form-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="contactPermission" name="contactPermission">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-label">
+                            I give permission for Talk2Hire to contact me about my feedback
+                        </span>
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="anonymous" name="anonymous">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-label">
+                            Submit feedback anonymously
+                        </span>
+                    </label>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary">
+                        <i class="fas fa-eraser"></i> Clear Form
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Submit Feedback
+                    </button>
+                </div>
+                
+                <div class="privacy-notice">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Your feedback is confidential and will be used solely to improve our services. 
+                       We respect your privacy and will never share your personal information.</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
